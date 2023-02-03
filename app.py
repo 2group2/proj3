@@ -3,7 +3,7 @@
 # variable initialization
 
 
-# TODO: retrieve log file 
+# TODO: retrieve log file and save to machine
 # (Two People)
 
 
