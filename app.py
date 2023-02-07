@@ -1,3 +1,6 @@
+# We all collobarated together on visual studio code editor under a shared terminal with live share which only uses the host terminal
+# and that's why a majority of the work was under Jai's commit.
+
 # library imports
 from pip._vendor import requests
 from urllib.request import urlretrieve
