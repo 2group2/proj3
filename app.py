@@ -36,11 +36,11 @@ with open(log_file, 'r') as file:
     else:
       last_six_month_request_counter += 1
 
-print("Total requests from last six months", last_six_month_request_counter)
-
+# TODO: Output the lines of code
 with open(log_file, "r") as file:
   request_total = len(file.readlines())
 
 # TODO: Output for marketing
+print("Total requests from last six months", last_six_month_request_counter)
 print("Total number of requests made in the last 6 months", request_total-323330)
 print("Total requests made:", request_total)
