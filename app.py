@@ -20,15 +20,7 @@ else:
   log_file, headers = urlretrieve(URL_PATH, log_file, lambda x,y,z: print('.', end='', flush=True) if x % 100 == 0 else False)
 
 
-# TODO: calculating requests from last SIX months
-# (Two People)
-# 
-# should be the 326725'th log line 
-# remote - - [11/Apr/1995:00:00:16 -0600] "GET 6721.gif HTTP/1.0" 200 1277
-# (last line) local - - [11/Oct/1995:14:14:17 -0600] "GET index.html HTTP/1.0" 304 0
-# 
-# command (format "dd/mmm/yyyy") > 10/Apr/1995
-
+# We found the specific line in the log file that represented the past six months then we wrote the following program to display that line:
 last_six_month_request_counter = 0
 end_date = "09/Apr/1995"
 
