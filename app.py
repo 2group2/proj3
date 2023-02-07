@@ -9,6 +9,7 @@ import os
 # variable initialization
 URL_PATH = 'https://s3.amazonaws.com/tcmg476/http_access_log'
 log_file = 'http_access_log.txt'
+end_date_line = 323330
 
 # TODO: retrieve log file and save to machine
 # (Two People)
@@ -41,6 +42,7 @@ with open(log_file, "r") as file:
   request_total = len(file.readlines())
 
 # TODO: Output for marketing
-print("Total requests from last six months", last_six_month_request_counter)
-print("Total number of requests made in the last 6 months", request_total-323330)
-print("Total requests made:", request_total)
+print("\nTotal requests from last six months", last_six_month_request_counter)
+print("\nTotal requests made:", request_total)
+
+print("\nTotal number of requests made in the last 6 months (Req. Total and Log Line)", request_total - end_date_line)
