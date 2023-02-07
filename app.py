@@ -56,26 +56,9 @@ print("Total requests from last six months", last_six_month_request_counter)
 #         for item in counter:
 #             writer.writerow((item, counter[item]))
 
-
-
-# TODO: calculating TOTAL amount of requests made
-
-# def count_ip(ip_list):
-#     return collections.Counter(ip_list)
-
-# def read_file(counter):
-#     with open('output.csv', 'r') as csvfile:
-#         writer = csv.writer(csvfile)
-#         header = ['IP', 'Count']
-#         writer.writerow(header)
-#         for item in counter:
-#             writer.writerow((item, counter[item]))
-
+# TODO: output for marketing
 with open(log_file, "r") as file:
   request_total = len(file.readlines())
 
 print("Total requests:", request_total)
 print("Est. from end date to end of April 10 line", request_total-323330)
-# TODO: output for marketing
-
-# yessir
