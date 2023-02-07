@@ -11,8 +11,7 @@ URL_PATH = 'https://s3.amazonaws.com/tcmg476/http_access_log'
 log_file = 'http_access_log.txt'
 end_date_line = 323330
 
-# TODO: retrieve log file and save to machine
-# (Two People)
+# retrieve log file and save to machine
 
 if os.path.exists(log_file):
   retrievefile = open(log_file, "r")
@@ -42,6 +41,7 @@ with open(log_file, "r") as file:
   request_total = len(file.readlines())
 
 # TODO: Output for marketing
+print("Log Data from AWS")
 print("\nTotal requests from last six months", last_six_month_request_counter)
 print("\nTotal requests made:", request_total)
 
