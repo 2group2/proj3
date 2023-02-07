@@ -37,16 +37,6 @@ with open(log_file, 'r') as file:
       last_six_month_request_counter += 1
 
 print("Total requests from last six months", last_six_month_request_counter)
-# def count_ip(ip_list):
-#     return collections.Counter(ip_list)
-
-# def read_file(counter):
-#     with open('output.csv', 'r') as csvfile:
-#         writer = csv.writer(csvfile)
-#         header = ['IP', 'Count']
-#         writer.writerow(header)
-#         for item in counter:
-#             writer.writerow((item, counter[item]))
 
 with open(log_file, "r") as file:
   request_total = len(file.readlines())
