@@ -51,7 +51,6 @@ print("Total requests from last six months", last_six_month_request_counter)
 with open(log_file, "r") as file:
   request_total = len(file.readlines())
 
-# TODO: output for marketing
-print("Est. from end date to end of April 10 line", request_total-323330)
-print("Total requests:", request_total)
-
+# TODO: Output for marketing
+print("Total number of requests made in the last 6 months", request_total-323330)
+print("Total requests made:", request_total)
