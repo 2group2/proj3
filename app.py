@@ -48,9 +48,10 @@ print("Total requests from last six months", last_six_month_request_counter)
 #         for item in counter:
 #             writer.writerow((item, counter[item]))
 
-# TODO: output for marketing
 with open(log_file, "r") as file:
   request_total = len(file.readlines())
 
-print("Total requests:", request_total)
+# TODO: output for marketing
 print("Est. from end date to end of April 10 line", request_total-323330)
+print("Total requests:", request_total)
+
